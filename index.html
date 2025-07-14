@@ -32,6 +32,11 @@
                 <button>Free Seo Analysis</button>
             </ul>
         </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+     </div>
     </nav>
     <section id="main">
         <h1>WE ARE </h1>
@@ -244,6 +249,7 @@
                     href="#"><i class="gg-youtube"></i></a> </h1>
         </div>
     </section>
+    
 <footer>
 <div id="location">
     <div class="myinfo">
@@ -279,5 +285,17 @@
         <div><img src="../SEO/project-imgs/curved-white-arrow-png-0.png" alt="arrow" width="40px" height="40px"></div>
     </a>
 </body>
+<script>
+    const hamburger = document.querySelector('.hamburger')
+    const navmenu = document.querySelector('#contacts ul')
+    const navcontact = document.querySelector('#contacts')
+    console.log(navmenu);
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navmenu.classList.toggle('active');
+       
+    })
+</script>
 
 </html>
